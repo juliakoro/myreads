@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Book from '../../components/Book/';
+import BooksGrid from '../../components/BooksGrid/';
 import Loader from 'react-loader';
+import './styles.css';
 
 /**
 * @description Search component.
@@ -26,14 +27,15 @@ const Search = ({ searchBooks, searchResults = [], updateBook, clearResults, loa
 			<div className="search-books-results">
 				<ol className="books-grid">
 					<Loader loaded={loaded}></Loader>
-					{results.map(book => (
+					<BooksGrid books={results} updateBook={updateBook} />
+					{/* {results.map(book => (
 						<li key={book.id}>
 							<Book
 								infos={book}
 								updateBook={updateBook}
 							/>
 						</li>
-					))}
+					))} */}
 				</ol>
 			</div>
 		</div>

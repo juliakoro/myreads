@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import * as BooksAPI from './BooksAPI';
+import Loader from 'react-loader';
 import './App.css';
-import Search from './components/Search/';
 import Header from './components/Header/';
 import Bookshelf from './components/Bookshelf/';
 import AddBook from './components/AddBook/';
-import Loader from 'react-loader';
+import Search from './components/Search/';
 
 class BooksApp extends React.Component {
 
@@ -98,7 +98,8 @@ class BooksApp extends React.Component {
 						<Loader loaded={loaded}>
 						</Loader>
 						{shelves.map(shelf => (
-							<Bookshelf 
+							<Bookshelf
+								key={shelf.title}
 								shelf={shelf}
 								updateBook={this.updateBook}
 							/>
