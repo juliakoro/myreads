@@ -97,11 +97,9 @@ class BooksApp extends React.Component {
 						<Header />
 						<Loader loaded={loaded}>
 						</Loader>
-						{shelves.map(shelve => (
-							<Bookshelf
-								key={shelve.title}
-								title={shelve.title}
-								books={shelve.books}
+						{shelves.map(shelf => (
+							<Bookshelf 
+								shelf={shelf}
 								updateBook={this.updateBook}
 							/>
 						))}

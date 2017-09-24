@@ -9,8 +9,8 @@ import './styles.css';
 * @param {Object[]} books - Books in the shelf.
 * @param {function} updateBook - Allows to update the book.
 */
-const Bookshelf = ({ title, books = [], updateBook }) => {
-	const currentBooks = books
+const Bookshelf = ({ shelf, updateBook }) => {
+	const { title, books } = shelf;
 
 	return (
 		<div className="list-books-content">
@@ -19,7 +19,7 @@ const Bookshelf = ({ title, books = [], updateBook }) => {
 					<h2 className="bookshelf-title">{title}</h2>
 					<div className="bookshelf-books">
 						<ol className="books-grid">
-							{currentBooks.map(book => (
+							{books.map(book => (
 								<li key={book.id}>
 									<Book
 										infos={book}
