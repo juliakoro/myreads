@@ -1,5 +1,6 @@
-import React from 'react'
-import Book from './Book'
+import React from 'react';
+import Book from '../../components/Book/';
+import './styles.css';
 
 /**
 * @description Represents a shelf.

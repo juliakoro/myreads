@@ -17,21 +17,22 @@ In your console use `npm install` to install all projetct dependencies and `npm 
 │   ├── favicon.ico # Icon
 │   └── index.html # DO NOT MODIFY
 └── src
-    ├── AddBook.js # Component to access search functionality.
     ├── App.css # Styles for the app.
     ├── App.js # This is the app root.
     ├── App.test.js # Used for testing. But no used in this project.
-    ├── Book.js # Component that represents a book whit its informations and hability to add it to a shelf/category.
     ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
-    ├── Bookshelf.js # Component that represents a shelf/category.
-    ├── Header.js # Component to render the application's header.
+    ├── components # Helpful images for your app. Use at your discretion.
+    │   ├── AddBook # Component to access search functionality.
+    │   ├── Book # Component that represents a book whit its informations and hability to add it to a shelf/category.
+    │   ├── Bookshelf # Component that represents a shelf/category.
+    │   ├── Header # Component to render the application's header.
+        └── Search # Component that implements search fuctionality.
     ├── icons # Helpful images for your app. Use at your discretion.
     │   ├── add.svg
     │   ├── arrow-back.svg
     │   └── arrow-drop-down.svg
     ├── index.css # Global styles.
     └── index.js # DOM rendering only, no need to modify
-    ├── Search.js # Component that implements search fuctionality.
 ```
 
 ## Backend Server
@@ -83,4 +84,4 @@ The backend API uses a fixed set of cached search results and is limited to a pa
 
 ## My Reads Starter
 
-This project was built upon [MyReads Project Starter Template(https://github.com/udacity/reactnd-project-myreads-starter). The goal was to add interactivity using React. You can find more information [here](https://github.com/udacity/reactnd-project-myreads-starter/blob/master/README.md).
+This project was built upon [MyReads Project Starter Template](https://github.com/udacity/reactnd-project-myreads-starter). The goal was to add interactivity using React. You can find more information [here](https://github.com/udacity/reactnd-project-myreads-starter/blob/master/README.md).
